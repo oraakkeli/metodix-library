@@ -33,3 +33,9 @@ jobs:
 
       - name: Test the validator
         run: python3 scripts/test_validate.py
+
+      # INDEX.md is generated. A generated file in git is only safe if going stale
+      # fails the build — otherwise the one page people actually read drifts away
+      # from the registry it claims to summarise.
+      - name: INDEX.md is up to date
+        run: python3 scripts/build_index.py --check

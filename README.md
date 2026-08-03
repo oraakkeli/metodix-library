@@ -32,6 +32,13 @@ The relationship is **not one-to-one**: one facilitator article can correspond t
 several panelist articles. `registry.yml` records which articles belong to the same
 concept, and it is the source of truth for every distribution decision.
 
+## What is in the library
+
+**[INDEX.md](INDEX.md) — every article, by concept and by register, on one page.**
+It is generated from `registry.yml` and the article front matter, so it cannot drift:
+CI fails if it is stale. Read it before adding anything; the **TODO** cells are the
+list of what is still unwritten.
+
 ## Layout
 
 ```

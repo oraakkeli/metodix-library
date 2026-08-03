@@ -33,6 +33,7 @@ exclude:
   - templates
   - registry.yml
   - CITATION.cff
+  - INDEX.md
   - CONTRIBUTING.md
   - README.md
   - Gemfile
