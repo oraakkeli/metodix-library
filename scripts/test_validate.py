@@ -119,6 +119,19 @@ def main() -> int:
             ("public ≠ registry", "V17", sub(art, "public: false", "public: true")),
         ]
 
+        # V19 vaatii kirjainkokoa EROTTAVAN levyn: macOS:llä törmäystä ei voi
+        # fyysisesti luoda, joten testi ohitetaan siellä ja ajetaan CI:ssä (Linux).
+        # Se on sama epäsymmetria jonka takia koko sääntö on olemassa.
+        probe = work / "CaseProbe.tmp"
+        probe.write_text("x", encoding="utf-8")
+        case_sensitive = not (work / "caseprobe.tmp").exists()
+        probe.unlink()
+        if case_sensitive:
+            cases.append(("kirjainkokotörmäys", "V19",
+                          lambda: (work / "Registry.yml").write_text("x", encoding="utf-8")))
+        else:
+            print(f"{'kirjainkokotörmäys':34} V19   OHITETTU (levy ei erota kirjainkokoa)")
+
         for name, rule, mutate in cases:
             restore()
             mutate()

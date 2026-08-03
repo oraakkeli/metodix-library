@@ -239,6 +239,38 @@ def check_registry(reg: dict, rep: Report
     return membership, concepts, settings
 
 
+SKIP_DIRS = {".git", "_site", ".jekyll-cache", "node_modules", "_to_delete",
+             "__pycache__", ".venv", "vendor"}
+
+
+def check_case_collisions(root: Path, rep: Report) -> None:
+    """V19 — kaksi polkua, jotka eroavat vain kirjainkoossa.
+
+    macOS:llä ne ovat YKSI tiedosto, palvelimella KAKSI. Kirjoitus toiseen ylittää
+    toisen kehittäjän koneella hiljaa, ja gitissä molemmat elävät. Bugi ei siis näy
+    siellä missä muutos tehdään.
+
+    Huom: tämä sääntö ei voi laueta kirjainkokoa erottamattomalla levyllä, koska
+    törmäystä ei fyysisesti ole olemassa siellä — rglob näkee vain toisen. Se laukeaa
+    CI:ssä, joka ajaa Linuxilla ja jossa checkout tuottaa molemmat tiedostot. Juuri
+    siksi tarkistus kuuluu CI:hin eikä pelkästään kehittäjän muistiin.
+
+    Tämä on `CONTRIBUTING.md` §5:n varoitus koneellisena: "Filenames are
+    case-sensitive on the server even when they are not on your Mac."
+    """
+    seen: dict[str, str] = {}
+    for p in sorted(root.rglob("*")):
+        if any(part in SKIP_DIRS for part in p.parts) or p.is_dir():
+            continue
+        rel = str(p.relative_to(root))
+        key = rel.lower()
+        if key in seen and seen[key] != rel:
+            rep.err("V19", f"'{rel}' ja '{seen[key]}' eroavat vain kirjainkoossa — "
+                           "macOS näkee ne yhtenä tiedostona, palvelin kahtena")
+        else:
+            seen[key] = rel
+
+
 def cross_check(found: dict[tuple[str, str], dict], membership: dict[str, str],
                 settings: dict[str, dict], rep: Report) -> None:
     """V6, V11, V17 — levy vs. registry."""
@@ -304,6 +336,7 @@ def main() -> int:
                 found[key] = fm
 
     cross_check(found, membership, settings, rep)
+    check_case_collisions(root, rep)
 
     # ── Tuloste ──
     for w in rep.warnings:

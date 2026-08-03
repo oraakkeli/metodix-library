@@ -44,7 +44,7 @@ list of what is still unwritten.
 ```
 registry.yml                              concept map — which articles are the same thing
 articles/<register>/<lang>/<id>.md        every article; id == filename
-scripts/validate.py                       structural validator (18 rules)
+scripts/validate.py                       structural validator (19 rules)
 scripts/test_validate.py                  the validator's own tests
 templates/article-template.md             front matter schema for a new article
 assets/                                   shared maps and icons
