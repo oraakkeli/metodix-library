@@ -1,5 +1,7 @@
 # Metodix Library
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21768887.svg)](https://doi.org/10.5281/zenodo.21768887)
+
 An open, versioned library of Delphi and futures research method articles, written in
 three **registers** — for facilitators, for panelists, and for the public — in English,
 Finnish and Swedish.
@@ -84,7 +86,18 @@ Each release is tagged and archived in Zenodo with its own DOI. A study freezes 
 it ran under, so its report can cite the method definition that was in force at the
 time rather than the current one. Cite a single article by naming it inside the release:
 
-> Konsensus ja dissensus [`03-konsensus-dissensus` v1.2], Metodix Library v0.1.0, DOI …
+> Konsensus ja dissensus [`03-konsensus-dissensus` v1.2], Metodix Library v0.1.0,
+> DOI [10.5281/zenodo.21768888](https://doi.org/10.5281/zenodo.21768888)
+
+Two DOIs, two jobs:
+
+| | DOI | Use it when |
+|---|---|---|
+| **Concept** | [10.5281/zenodo.21768887](https://doi.org/10.5281/zenodo.21768887) | you mean the library, whatever its current state |
+| **v0.1.0** | [10.5281/zenodo.21768888](https://doi.org/10.5281/zenodo.21768888) | a study pins the method definition it actually ran under |
+
+A report cites the version DOI. That is the whole point of tagging: the reader can
+retrieve the definition that was in force, not the one that replaced it.
 
 See [CITATION.cff](CITATION.cff).
 

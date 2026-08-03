@@ -28,7 +28,11 @@ More public articles are added as they are written.
 Every release is tagged and archived with its own DOI. A study cites the tag it ran
 under, not the current state of the library:
 
-> Konsensus ja dissensus [`03-konsensus-dissensus` v1.2], Metodix Library v0.1.0, DOI …
+> Konsensus ja dissensus [`03-konsensus-dissensus` v1.2], Metodix Library v0.1.0,
+> DOI [10.5281/zenodo.21768888](https://doi.org/10.5281/zenodo.21768888)
+
+The **concept DOI** [10.5281/zenodo.21768887](https://doi.org/10.5281/zenodo.21768887) always resolves to the
+latest release; the **version DOI** above freezes v0.1.0.
 
 To read a pinned version of any article directly:
 
