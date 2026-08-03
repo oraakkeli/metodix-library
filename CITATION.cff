@@ -28,16 +28,11 @@ keywords:
   - research methodology
   - expert panels
   - consensus and dissensus
-version: 0.1.0
+version: 0.2.0
 date-released: 2026-08-03
-# Concept DOI: always resolves to the most recent release. Cite this when you mean
-# "the library". A study cites the version DOI of the tag it ran under instead — see
-# `identifiers` below.
+# Concept DOI: always resolves to the most recent release. This is the DOI to cite
+# when you mean "the library". Each release also gets its own version DOI — a study
+# cites that one, and Zenodo lists them all under this record. Version DOIs are
+# deliberately NOT listed here: the list would go stale on every release, and a
+# stale citation is worse than one indirection.
 doi: 10.5281/zenodo.21768887
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.21768887
-    description: Concept DOI — resolves to the latest release
-  - type: doi
-    value: 10.5281/zenodo.21768888
-    description: Version DOI — Metodix Library v0.1.0

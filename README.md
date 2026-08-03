@@ -94,7 +94,7 @@ Two DOIs, two jobs:
 | | DOI | Use it when |
 |---|---|---|
 | **Concept** | [10.5281/zenodo.21768887](https://doi.org/10.5281/zenodo.21768887) | you mean the library, whatever its current state |
-| **v0.1.0** | [10.5281/zenodo.21768888](https://doi.org/10.5281/zenodo.21768888) | a study pins the method definition it actually ran under |
+| **Version** | one per release, e.g. [10.5281/zenodo.21768888](https://doi.org/10.5281/zenodo.21768888) for v0.1.0 | a study pins the method definition it actually ran under |
 
 A report cites the version DOI. That is the whole point of tagging: the reader can
 retrieve the definition that was in force, not the one that replaced it.
