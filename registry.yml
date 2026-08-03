@@ -1,0 +1,347 @@
+# Metodix Library — registry.yml (M1-luonnos, 2.8.2026)
+#
+# Käsitekartta: yksi käsite, useita rekisterivariantteja, kussakin fi/en/sv.
+# Tämä tiedosto on ihmisen ylläpitämä TOTUUS siitä, mitkä artikkelit ovat sama asia
+# eri yleisölle. validate.py tarkistaa, että jokainen levyllä oleva artikkeli
+# esiintyy täsmälleen kerran tässä ja että ristiviittaukset osoittavat olemassa oleviin.
+#
+# HUOM (M1:n löydös): rekisterien välinen suhde EI ole 1:1. Yksi fasilitoija-artikkeli
+# voi vastata useaa panelistiartikkelia (kysymystyypit). Siksi `registers` on
+# rekisteri → LISTA tunnisteita, ei rekisteri → tunniste.
+#
+# Kaksi eri kenttää, joita ei saa sekoittaa:
+#   public_target (käsitetaso) = ansaitseeko TÄMÄ KÄSITE julkisen artikkelin?
+#                                true | split (vaatii oman julkisen version) | false
+#   articles.<id>.public (artikkelitaso) = saako TÄMÄ TIEDOSTO näkyä julkisella sivulla?
+# Molemmat noudattavat päätettyä sääntöä:
+#   "Onko se ymmärrettävä ja hyödyllinen ihmiselle, jolla ei ole Pronoiaa?"
+#
+# M6:n mittaustulos (2.8.2026): kaikissa 13 fasilitoija-artikkelissa on
+# tuotesidonnaisia viittauksia → yksikään ei mene julkiseksi sellaisenaan.
+# Julkinen rekisteri kirjoitetaan omiksi artikkeleikseen (T7), ei republishaamalla.
+
+meta:
+  version: 0.1-draft
+  date: 2026-08-02
+  source: Delphi-Pronoia frontend/help @ 2.8.2026
+  articles_total: 24          # 13 fasilitoija + 10 panelisti + 1 julkinen (runko)
+  exits_library: 1            # 11-luottamus → metodix.eu-tuotesivu (päätös 2.8.2026)
+  concepts_total: 14
+  languages: [en, fi, sv]     # kaikki 24 Pronoian artikkelia ovat kaikilla kolmella
+  source_lang_default: fi     # grandfathering; uudet artikkelit en
+  legacy_ids:                 # jäädytetyt Pronoia-tunnisteet; numeroetuliite sallittu vain näissä
+    - 01-delfoi
+    - 02-orientaatiot
+    - 03-konsensus-dissensus
+    - 04-kierrokset
+    - 05-pire
+    - 06-dae
+    - 07-tietoturva
+    - 08-aikakysymykset
+    - 09-kysymystyypit
+    - 10-ai-lapinakyvyys
+    - 12-ai-kayttomuodot
+    - 13-tulevaisuuskartta
+    - 14-paneelin-tila
+    - p0-tervetuloa
+    - p1-vastaaminen
+    - p2-kierrokset
+    - p3-erimielisyys
+    - p4-tietosuoja
+    - p5-ryhmittely
+    - p6-aikaestimaatti
+    - p7-panostus
+    - p8-sijoittelu
+    - p9-tekoalypanelistit
+
+concepts:
+
+  - concept: delfoi-menetelma
+    title: Mikä on Delfoi-menetelmä
+    registers:
+      facilitator: [01-delfoi]
+      panelist: []            # tietoisesti ei — p0 + p2 kattavat panelistin tarpeen
+      public: [TODO]
+    public_target: true
+    note: >
+      Vahvin yksittäinen julkinen kandidaatti. Sisältää "Pronoiassa"-jakson,
+      joka karsitaan julkisesta versiosta.
+    articles:
+      01-delfoi:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+
+  - concept: orientaatiot
+    title: Orientaatiot N / S / R / E / D
+    registers:
+      facilitator: [02-orientaatiot]
+      panelist: []            # tietoisesti ei — orientaatio on fasilitoijan valinta
+      public: [TODO]
+    public_target: true
+    note: Metodixin oma konstruktio; korkea julkinen arvo. PIRE-maininta karsitaan.
+    articles:
+      02-orientaatiot:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+
+  - concept: konsensus-dissensus
+    title: Konsensus ja dissensus
+    registers:
+      facilitator: [03-konsensus-dissensus]
+      panelist: [p3-erimielisyys]
+      public: [TODO]
+    see_also: [07-tietoturva]      # p3 kattaa myös anonymiteetin → käsite `tietosuoja`
+    public_target: split
+    note: >
+      Mallin kantava esimerkki: sama käsite kahdessa rekisterissä jo nyt.
+      p3 kattaa myös anonymiteetin → osittainen päällekkäisyys käsitteen
+      `tietosuoja` kanssa (07 §Anonymiteetti).
+    articles:
+      03-konsensus-dissensus:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+      p3-erimielisyys:
+        public: true
+        kb_include: false
+
+  - concept: kierrokset
+    title: Kierrokset, dialogi ja tauko
+    registers:
+      facilitator: [04-kierrokset]
+      panelist: [p2-kierrokset]
+      public: [TODO]
+    public_target: split
+    note: Kaksi kierrosmallia on yleistä; Pronoian tauko-vaihe on tuotetta.
+    articles:
+      04-kierrokset:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+      p2-kierrokset:
+        public: true
+        kb_include: false
+
+  - concept: pire
+    title: PIRE — kierrosväliapuri
+    registers:
+      facilitator: [05-pire]
+      panelist: []            # tietoisesti ei — panelisti ei kohtaa PIREä
+      public: []
+    public_target: false
+    note: Tuotekomponentti. Ei ymmärrettävä ilman Pronoiaa.
+    articles:
+      05-pire:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+
+  - concept: kuvaileva-vs-tulkitseva
+    title: Kuvaileva vs. tulkitseva — Pronoian ja DAE:n raja
+    registers:
+      facilitator: [06-dae]
+      panelist: []
+      public: [TODO]
+    public_target: split
+    note: >
+      Käsitteellinen ydin (kuvailun ja tulkinnan erottaminen) on julkisesti
+      arvokas ja kytkeytyy "aineiston ja tulkinnan erottaminen" -periaatteeseen.
+      Tuotteiden työnjako ei ole.
+    articles:
+      06-dae:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+
+  - concept: tietosuoja
+    title: Tietosuoja, anonymiteetti ja rekisterinpitäjän vastuu
+    registers:
+      facilitator: [07-tietoturva]
+      panelist: [p4-tietosuoja]
+      public: [TODO]
+    public_target: split
+    exits_library:
+      - id: 11-luottamus
+        decided: 2026-08-02
+        target: metodix.eu-tuotesivu
+        rationale: >
+          Luottamusviestintää tuotteesta, ei metodiartikkeli. Ei koodiviittauksia
+          (vain CHANGELOG-maininta), joten poisto ei riko mitään.
+        blocker_resolved: 2026-08-02
+        blocker_answer: >
+          Tuotanto ajaa EU-alueen pilvessä (Hetzner VPS, EU; varmuuskopiot EU ≤ 30 vrk).
+          11 oli oikeassa, 07 väärässä. Ristiriita koski viittä paikkaa, ei kahta —
+          ks. T0-hosting-korjaus.md. Korjaus tehdään Pronoiassa ENNEN T4:ää omana
+          committinaan, jotta siirtocommittiin ei tule sisältömuutoksia.
+        preserve_into_07:
+          - tekninen perusta (TLS, kertakäyttöiset kutsulinkit, varmuuskopiot EU 30 vrk, staging)
+    articles:
+      07-tietoturva:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+      p4-tietosuoja:
+        public: true
+        kb_include: false
+
+  - concept: aikakysymykset
+    title: Aikakysymykset — aikaikkuna, aikasarja, aikaestimaatti
+    registers:
+      facilitator: [08-aikakysymykset]
+      panelist: [p6-aikaestimaatti]
+      public: [TODO]
+    public_target: true
+    note: >
+      Kattavuusero: fasilitoija-artikkeli kattaa kolme tyyppiä, panelistiartikkeli
+      vain aikaestimaatin. Aikaikkuna ja aikasarja selitetään panelistille
+      p1-vastaaminen-artikkelin sisällä → rajanveto tarkistettava.
+    articles:
+      08-aikakysymykset:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+      p6-aikaestimaatti:
+        public: true
+        kb_include: false
+
+  - concept: kysymystyypit
+    title: Kysymystyypit ja niihin vastaaminen
+    registers:
+      facilitator: [09-kysymystyypit]
+      panelist: [p5-ryhmittely, p7-panostus, p8-sijoittelu]
+      public: [TODO]
+    see_also: [p1-vastaaminen]     # kuuluu käsitteeseen `vastaaminen`, kattaa myös tyyppejä
+    public_target: split
+    note: >
+      ⚠ LÖYDÖS: tässä rekisterisuhde on 1:3 (+1 ristiviittaus). Fasilitoija saa YHDEN valintaoppaan
+      ("mitä paneelilta voi oppia"), panelisti saa yhden vastausohjeen per
+      kohtaamansa tyyppi. Tämä rikkoo 1:1-oletuksen ja on syy siihen, että
+      `registers` on lista. Julkiseen versioon kelpaa tyypittely, ei Pronoian
+      kymmenen tyypin luettelo.
+    articles:
+      09-kysymystyypit:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+      p5-ryhmittely:
+        public: false
+        kb_include: false
+        public_reason: >-
+          operatiivinen: kertoo miten widgetiä käytetään, ei mitä kysytään
+      p7-panostus:
+        public: false
+        kb_include: false
+        public_reason: >-
+          operatiivinen: summan täsmääminen on käyttöohje, ei menetelmä
+      p8-sijoittelu:
+        public: false
+        kb_include: false
+        public_reason: >-
+          operatiivinen: pisteen raahaaminen on käyttöohje, ei menetelmä
+
+  - concept: ai-lapinakyvyys
+    title: AI-läpinäkyvyys ja tekoälypanelistit
+    registers:
+      facilitator: [10-ai-lapinakyvyys]
+      panelist: [p9-tekoalypanelistit]
+      public: [TODO]
+    public_target: true
+    note: >
+      EU AI-asetus 2024/1689 art. 50 + synteettisen ja inhimillisen argumentin
+      erottaminen — molemmat yleisiä, eivät Pronoia-sidonnaisia. Vahva julkinen
+      kandidaatti heti 01:n ja 14:n jälkeen.
+    articles:
+      10-ai-lapinakyvyys:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+      p9-tekoalypanelistit:
+        public: true
+        kb_include: false
+
+  - concept: ai-kayttomuodot
+    title: Tekoälyn käyttömuodot ja kustannukset
+    registers:
+      facilitator: [12-ai-kayttomuodot]
+      panelist: []
+      public: []
+    public_target: false
+    note: Moodit, palvelut ja hinnoittelu — tuotetta, ei menetelmää.
+    articles:
+      12-ai-kayttomuodot:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+
+  - concept: ekosysteemi-ja-apurit
+    title: Ekosysteemi, tulevaisuuskartta ja apurit (Kastalia · Kassotis)
+    registers:
+      facilitator: [13-tulevaisuuskartta]
+      panelist: [p0-tervetuloa]
+      public: [pronoia-kastalia-kassotis]      # ✓ jo olemassa (runko v0.1)
+    public_target: true
+    note: >
+      ✓ AINOA TÄYSI RIVI: kaikki kolme rekisteriä olemassa jo nyt. Todistaa
+      rekisterimallin toimivaksi ja toimii referenssitapauksena muille.
+    articles:
+      13-tulevaisuuskartta:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+      p0-tervetuloa:
+        public: true
+        kb_include: false
+      pronoia-kastalia-kassotis:
+        public: true
+        kb_include: false
+
+  - concept: paneelin-tila
+    title: Paneelin tila — mitä mitataan ja miten sitä luetaan
+    registers:
+      facilitator: [14-paneelin-tila]
+      panelist: [TODO]        # ⚠ AUKKO — ks. note
+      public: [TODO]
+    public_target: true
+    note: >
+      ⚠ AUKKO: p2-kierrokset lupaa panelistille "näet ryhmän yhteenvedon", mutta
+      yhtään artikkelia siitä, miten jakauman lukee, ei ole. Ainoa aito puuttuva
+      panelistivariantti koko kirjastossa → *tehdään*.
+      Julkisesti tämä on metodologisesti painavin artikkeli (kolme mittaria,
+      kynnysten laskeminen, dissensuksen neljä paikkaa).
+    articles:
+      14-paneelin-tila:
+        public: false
+        kb_include: true
+        public_reason: >-
+          fasilitoijarekisteri ei mene julkiseksi sellaisenaan: jokainen 13:sta sisältää tuotesidonnaisia viittauksia (mittaus 2.8.2026). Julkinen versio kirjoitetaan omaksi artikkelikseen T7:ssä.
+
+  - concept: vastaaminen
+    title: Miten vastaan
+    registers:
+      facilitator: []         # tietoisesti ei — fasilitoija ei vastaa
+      panelist: [p1-vastaaminen]
+      public: [TODO]
+    public_target: true
+    note: >
+      Panelistilähtöinen käsite ilman fasilitoijasisarta. Julkisena se on
+      kutsukirjeen liite: "näin osallistuminen käytännössä toimii".
+      Huom: p1 sisältää myös aikaikkunan ja aikasarjan ohjeet → osittain
+      käsitteen `kysymystyypit` ja `aikakysymykset` alla.
+    articles:
+      p1-vastaaminen:
+        public: true
+        kb_include: false

@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: Metodix Library
+message: >-
+  If you use this library — or a method definition from it — please cite it
+  using the metadata below. For a single article, cite the library release and
+  name the article by its permanent identifier and version, e.g.
+  "Konsensus ja dissensus [03-konsensus-dissensus v1.2], Metodix Library v0.1.0".
+type: dataset
+abstract: >-
+  An open, versioned library of Delphi and futures research method articles,
+  written in three registers — for facilitators, for panelists, and for the
+  public — in English, Finnish and Swedish. Each release is archived with its own
+  DOI, so a study can cite the method definition that was in force when it ran,
+  rather than the current one.
+authors:
+  - name: Metodix Oy
+    city: Helsinki
+    country: FI
+    email: info@metodix.fi
+    website: https://www.metodix.eu
+repository-code: https://github.com/oraakkeli/metodix-library
+url: https://github.com/oraakkeli/metodix-library
+license: CC-BY-4.0
+keywords:
+  - Delphi method
+  - futures research
+  - foresight
+  - research methodology
+  - expert panels
+  - consensus and dissensus
+version: 0.1.0
+date-released: 2026-08-02

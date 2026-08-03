@@ -1,0 +1,35 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: structure
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Upper bound on purpose. In August 2026 an unbounded `mcp` dependency in a
+      # sibling repo went to 2.0.0, removed a module, and took CI red — the pin is
+      # cheaper than the outage.
+      - name: Install dependencies
+        run: pip install "pyyaml>=6,<7"
+
+      # Exits 1 on any error. A validator that prints problems and returns 0 is
+      # not a gate; see the module docstring in scripts/validate.py.
+      - name: Validate library structure
+        run: python3 scripts/validate.py --root .
+
+      - name: Test the validator
+        run: python3 scripts/test_validate.py

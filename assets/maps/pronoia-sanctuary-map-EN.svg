@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1180" font-family="Arimo, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEF4FB"/>
+      <stop offset="0.35" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <pattern id="meander" width="16" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 9 H3 V1 H8 V9 H13 V1 H16" fill="none" stroke="#0066CC" stroke-width="1.3"/>
+    </pattern>
+    <pattern id="meanderLight" width="16" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 9 H3 V1 H8 V9 H13 V1 H16" fill="none" stroke="#7FA8D6" stroke-width="1.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Background and frame -->
+  <rect x="0" y="0" width="840" height="1180" fill="#F5F7FA"/>
+  <rect x="18" y="18" width="804" height="1144" fill="url(#bg)" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- Faint terrain contours -->
+  <g stroke="#003366" fill="none" stroke-width="1.2" opacity="0.06">
+    <path d="M20 262 C 200 232, 400 292, 820 242"/>
+    <path d="M20 432 C 250 402, 500 472, 820 422"/>
+    <path d="M20 702 C 220 662, 520 742, 820 692"/>
+    <path d="M20 902 C 260 862, 540 942, 820 892"/>
+    <path d="M20 1012 C 300 982, 560 1042, 820 1002"/>
+  </g>
+
+  <!-- Metodix header band -->
+  <rect x="18" y="18" width="804" height="100" fill="#003366"/>
+  <rect x="18" y="118" width="804" height="3" fill="#0066CC"/>
+  <text x="420" y="66" text-anchor="middle" font-size="30" font-weight="700" fill="#FFFFFF" letter-spacing="7">PRONOIA</text>
+  <text x="420" y="94" text-anchor="middle" font-size="14" fill="#CFE0F2" letter-spacing="1">The Journey to the Temple &#183; DPE &#8594; Pronoia &#8594; DAE</text>
+  <rect x="300" y="132" width="240" height="10" fill="url(#meander)"/>
+
+  <!-- Groundwater (shared knowledge base) -->
+  <path d="M 150 1005 q 8 -30 0 -60 q -8 -30 0 -60 q 8 -30 0 -60 q -8 -30 0 -60 q 8 -30 0 -60 q -8 -30 0 -60 q 8 -30 0 -60 q -8 -30 0 -60 q 8 -30 0 -60 q -8 -30 0 -60 q 8 -30 0 -45"
+        fill="none" stroke="#0066CC" stroke-width="2" stroke-dasharray="2 6" opacity="0.5"/>
+  <text x="138" y="640" font-size="11" fill="#0066CC" opacity="0.8" letter-spacing="2" transform="rotate(-90 138 640)">THE GROUNDWATER OF PARNASSUS</text>
+  <path d="M 150 952 q 40 8 80 0 q 35 -7 70 -2" fill="none" stroke="#0066CC" stroke-width="2" stroke-dasharray="2 6" opacity="0.5"/>
+  <path d="M 150 378 q 60 8 130 0 q 60 -7 112 -2" fill="none" stroke="#0066CC" stroke-width="2" stroke-dasharray="2 6" opacity="0.5"/>
+
+  <!-- Sacred way -->
+  <path d="M 420 1008 C 300 930, 540 860, 420 760 C 300 660, 540 590, 420 480 C 340 440, 300 370, 352 318"
+        fill="none" stroke="#003366" stroke-width="3" stroke-dasharray="8 7" stroke-linecap="round"/>
+
+  <!-- Votive treasuries -->
+  <g stroke="#003366" stroke-width="1.6" fill="#FFFFFF" opacity="0.8">
+    <rect x="486" y="782" width="24" height="16"/>
+    <path d="M 483 782 L 498 770 L 513 782 Z"/>
+    <rect x="288" y="444" width="24" height="16"/>
+    <path d="M 285 444 L 300 432 L 315 444 Z"/>
+  </g>
+  <text x="498" y="812" text-anchor="middle" font-size="9.5" fill="#999999">votive treasuries</text>
+
+  <!-- ======= STATION 1: GATE, KASTALIA, PEOPLE ======= -->
+  <ellipse cx="420" cy="1015" rx="44" ry="5" fill="#003366" opacity="0.05"/>
+  <circle cx="330" cy="946" r="32" fill="#0066CC" opacity="0.10"/>
+
+  <rect x="394" y="978" width="9" height="34" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+  <rect x="437" y="978" width="9" height="34" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+  <line x1="388" y1="976" x2="452" y2="976" stroke="#003366" stroke-width="2.5"/>
+  <text x="420" y="1036" text-anchor="middle" font-size="12" fill="#003366" letter-spacing="3">GATE</text>
+
+  <!-- Facilitator in planning dialogue with Kastalia -->
+  <text x="245" y="903" text-anchor="middle" font-size="10" fill="#666666">facilitator &#183; planning</text>
+  <circle cx="252" cy="922" r="5" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+  <path d="M 246 962 L 249 930 Q 252 927 255 930 L 258 962 Z" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+  <path d="M 272 938 a 9 9 0 0 1 13 -7" fill="none" stroke="#0066CC" stroke-width="2"/>
+  <path d="M 302 930 a 9 9 0 0 1 -13 7" fill="none" stroke="#0066CC" stroke-width="2"/>
+
+  <!-- Kastalia: spring surfacing -->
+  <path d="M 318 948 a 12 12 0 0 1 24 0" fill="none" stroke="#0066CC" stroke-width="2.5"/>
+  <path d="M 310 954 a 20 20 0 0 1 40 0" fill="none" stroke="#0066CC" stroke-width="2.5" opacity="0.75"/>
+  <path d="M 302 960 a 28 28 0 0 1 56 0" fill="none" stroke="#0066CC" stroke-width="2.5" opacity="0.5"/>
+  <circle cx="330" cy="944" r="3" fill="#0066CC"/>
+  <circle cx="322" cy="931" r="2" fill="#0066CC" opacity="0.8"/>
+  <circle cx="338" cy="927" r="1.5" fill="#0066CC" opacity="0.6"/>
+  <text x="330" y="988" text-anchor="middle" font-size="15" font-weight="700" fill="#0066CC">KASTALIA</text>
+  <text x="330" y="1004" text-anchor="middle" font-size="11" fill="#666666">assistant at the threshold</text>
+  <text x="330" y="1020" text-anchor="middle" font-size="10.5" fill="#666666" letter-spacing="2">DPE &#183; PLANNING</text>
+
+  <!-- Panelists in Round 0 dialogue with Kastalia at the gate -->
+  <circle cx="552" cy="941" r="4.5" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+  <path d="M 547 976 L 549.5 948 Q 552 945 554.5 948 L 557 976 Z" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+  <circle cx="580" cy="948" r="4.5" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+  <path d="M 575 983 L 577.5 955 Q 580 952 582.5 955 L 585 983 Z" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+  <path d="M 594 952 a 9 9 0 0 1 13 -7" fill="none" stroke="#0066CC" stroke-width="2"/>
+  <path d="M 624 944 a 9 9 0 0 1 -13 7" fill="none" stroke="#0066CC" stroke-width="2"/>
+  <path d="M 622 962 a 10 10 0 0 1 20 0" fill="none" stroke="#0066CC" stroke-width="2.2"/>
+  <path d="M 616 968 a 16 16 0 0 1 32 0" fill="none" stroke="#0066CC" stroke-width="2.2" opacity="0.6"/>
+  <circle cx="632" cy="958" r="2.2" fill="#0066CC"/>
+  <text x="592" y="1000" text-anchor="middle" font-size="10" fill="#666666">panelists &#183; Round 0 dialogue</text>
+
+  <!-- Phylacus shield -->
+  <path d="M 728 970 q 12 5 24 0 q 2 20 -12 30 q -14 -10 -12 -30 z" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+  <line x1="733" y1="978" x2="746" y2="991" stroke="#003366" stroke-width="1.1"/>
+  <line x1="738" y1="975" x2="748" y2="985" stroke="#003366" stroke-width="1.1"/>
+  <text x="740" y="1020" text-anchor="middle" font-size="10" fill="#666666">PHYLACUS &#183; data protection</text>
+
+  <!-- Human gate 1 -->
+  <circle cx="420" cy="892" r="15" fill="#FF9900" opacity="0.15"/>
+  <rect x="413" y="885" width="14" height="14" transform="rotate(45 420 892)" fill="#FF9900" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text x="448" y="890" font-size="11.5" font-weight="700" fill="#333333">Human gate</text>
+  <text x="448" y="904" font-size="11" fill="#666666">approval of the plan</text>
+
+  <!-- ======= STATION 2: LESCHE with the anonymous panel ======= -->
+  <ellipse cx="252" cy="646" rx="72" ry="5" fill="#003366" opacity="0.05"/>
+  <rect x="192" y="574" width="120" height="66" fill="#FFFFFF" stroke="none"/>
+  <line x1="192" y1="568" x2="312" y2="568" stroke="#003366" stroke-width="2.5"/>
+  <line x1="192" y1="574" x2="312" y2="574" stroke="#003366" stroke-width="1.2"/>
+  <line x1="202" y1="574" x2="202" y2="640" stroke="#003366" stroke-width="2"/>
+  <line x1="235" y1="574" x2="235" y2="640" stroke="#003366" stroke-width="2"/>
+  <line x1="269" y1="574" x2="269" y2="640" stroke="#003366" stroke-width="2"/>
+  <line x1="302" y1="574" x2="302" y2="640" stroke="#003366" stroke-width="2"/>
+  <line x1="188" y1="642" x2="316" y2="642" stroke="#003366" stroke-width="2.5"/>
+  <!-- Anonymous panelists inside -->
+  <circle cx="218" cy="604" r="3.5" fill="#FFFFFF" stroke="#003366" stroke-width="1.8"/>
+  <path d="M 214 638 L 216 610 Q 218 607.5 220 610 L 222 638 Z" fill="#FFFFFF" stroke="#003366" stroke-width="1.8"/>
+  <circle cx="252" cy="600" r="3.5" fill="#FFFFFF" stroke="#003366" stroke-width="1.8"/>
+  <path d="M 248 638 L 250 606 Q 252 603.5 254 606 L 256 638 Z" fill="#FFFFFF" stroke="#003366" stroke-width="1.8"/>
+  <circle cx="286" cy="604" r="3.5" fill="#FFFFFF" stroke="#003366" stroke-width="1.8"/>
+  <path d="M 282 638 L 284 610 Q 286 607.5 288 610 L 290 638 Z" fill="#FFFFFF" stroke="#003366" stroke-width="1.8"/>
+  <!-- dialogue arcs above -->
+  <path d="M 228 592 a 8 8 0 0 1 12 -6" fill="none" stroke="#0066CC" stroke-width="1.8"/>
+  <path d="M 276 586 a 8 8 0 0 1 -12 6" fill="none" stroke="#0066CC" stroke-width="1.8"/>
+  <text x="252" y="666" text-anchor="middle" font-size="13" font-weight="700" fill="#003366">LESCHE &#8212; the room of dialogue</text>
+  <text x="252" y="682" text-anchor="middle" font-size="10.5" fill="#666666" letter-spacing="2">PRONOIA &#183; PANEL ROUNDS</text>
+
+  <!-- Human gate 2 -->
+  <circle cx="420" cy="624" r="15" fill="#FF9900" opacity="0.15"/>
+  <rect x="413" y="617" width="14" height="14" transform="rotate(45 420 624)" fill="#FF9900" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text x="448" y="622" font-size="11.5" font-weight="700" fill="#333333">Human gate</text>
+  <text x="448" y="636" font-size="11" fill="#666666">round-to-round decisions</text>
+
+  <!-- ======= STATION 3: TEMPLE, ADYTON, KASSOTIS & RESEARCHER ======= -->
+  <text x="420" y="182" text-anchor="middle" font-size="12" fill="#003366" letter-spacing="3">TEMPLE &amp; ADYTON</text>
+  <ellipse cx="420" cy="326" rx="108" ry="6" fill="#003366" opacity="0.05"/>
+  <circle cx="420" cy="352" r="32" fill="#003366" opacity="0.08"/>
+  <!-- Laurel sprig -->
+  <g stroke="#0066CC" fill="none" stroke-width="1.5" opacity="0.75">
+    <path d="M 288 232 q 10 -22 30 -30"/>
+    <ellipse cx="294" cy="219" rx="7" ry="2.8" transform="rotate(-58 294 219)"/>
+    <ellipse cx="303" cy="209" rx="7" ry="2.8" transform="rotate(-38 303 209)"/>
+    <ellipse cx="314" cy="203" rx="7" ry="2.8" transform="rotate(-18 314 203)"/>
+    <ellipse cx="291" cy="230" rx="7" ry="2.8" transform="rotate(-80 291 230)"/>
+  </g>
+  <!-- Pediment -->
+  <path d="M 330 245 L 420 202 L 510 245 Z" fill="#EAF2FB" stroke="#003366" stroke-width="2.5"/>
+  <circle cx="420" cy="198" r="2.5" fill="#003366"/>
+  <circle cx="328" cy="241" r="2.5" fill="#003366"/>
+  <circle cx="512" cy="241" r="2.5" fill="#003366"/>
+  <line x1="324" y1="250" x2="516" y2="250" stroke="#003366" stroke-width="2"/>
+  <g stroke="#003366" stroke-width="2.5">
+    <line x1="345" y1="254" x2="345" y2="308"/>
+    <line x1="382" y1="254" x2="382" y2="308"/>
+    <line x1="458" y1="254" x2="458" y2="308"/>
+    <line x1="495" y1="254" x2="495" y2="308"/>
+  </g>
+  <g stroke="#003366" stroke-width="1.6">
+    <line x1="340" y1="256" x2="350" y2="256"/>
+    <line x1="377" y1="256" x2="387" y2="256"/>
+    <line x1="453" y1="256" x2="463" y2="256"/>
+    <line x1="490" y1="256" x2="500" y2="256"/>
+  </g>
+  <line x1="322" y1="311" x2="518" y2="311" stroke="#003366" stroke-width="2.5"/>
+  <line x1="330" y1="317" x2="510" y2="317" stroke="#003366" stroke-width="1.5"/>
+  <line x1="338" y1="323" x2="502" y2="323" stroke="#003366" stroke-width="1"/>
+  <!-- Omphalos -->
+  <circle cx="420" cy="300" r="26" fill="#FF9900" opacity="0.12"/>
+  <path d="M 404 308 a 16 20 0 0 1 32 0 z" fill="#FF9900"/>
+  <text x="545" y="266" font-size="13" font-weight="700" fill="#FF9900">YOU ARE THE ONE WHO SEES</text>
+  <text x="545" y="281" font-size="11" fill="#666666">interpretation belongs to the human</text>
+
+  <!-- Kassotis funnel -->
+  <path d="M 392 342 a 28 28 0 0 0 56 0" fill="none" stroke="#003366" stroke-width="2.5" opacity="0.5"/>
+  <path d="M 400 348 a 20 20 0 0 0 40 0" fill="none" stroke="#003366" stroke-width="2.5" opacity="0.75"/>
+  <path d="M 408 354 a 12 12 0 0 0 24 0" fill="none" stroke="#003366" stroke-width="2.5"/>
+  <circle cx="420" cy="372" r="3" fill="#003366"/>
+  <circle cx="412" cy="381" r="1.8" fill="#003366" opacity="0.7"/>
+  <circle cx="427" cy="384" r="1.4" fill="#003366" opacity="0.5"/>
+  <path d="M 420 338 L 420 326" fill="none" stroke="#003366" stroke-width="2" stroke-dasharray="2 4"/>
+  <text x="310" y="372" text-anchor="end" font-size="15" font-weight="700" fill="#003366">KASSOTIS</text>
+  <text x="310" y="388" text-anchor="end" font-size="11" fill="#666666">the researcher's assistant</text>
+  <text x="310" y="404" text-anchor="end" font-size="10.5" fill="#666666" letter-spacing="2">DAE &#183; ANALYSIS</text>
+
+  <!-- Researcher in analysis dialogue with Kassotis -->
+  <circle cx="500" cy="344" r="5" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+  <path d="M 494 384 L 497 352 Q 500 349 503 352 L 506 384 Z" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+  <path d="M 458 360 a 9 9 0 0 1 13 -7" fill="none" stroke="#0066CC" stroke-width="2"/>
+  <path d="M 488 352 a 9 9 0 0 1 -13 7" fill="none" stroke="#0066CC" stroke-width="2"/>
+  <text x="505" y="404" text-anchor="middle" font-size="10" fill="#666666">facilitator &#183; analysis dialogue</text>
+
+  <!-- ======= LEGEND ======= -->
+  <line x1="60" y1="1052" x2="780" y2="1052" stroke="#E0E0E0" stroke-width="1"/>
+  <circle cx="86" cy="1078" r="6" fill="#0066CC"/>
+  <text x="100" y="1082" font-size="11" fill="#333333">Kastalia &#8212; surface and preparation</text>
+  <circle cx="318" cy="1078" r="6" fill="#003366"/>
+  <text x="332" y="1082" font-size="11" fill="#333333">Kassotis &#8212; depth and analysis</text>
+  <rect x="540" y="1072" width="12" height="12" transform="rotate(45 546 1078)" fill="#FF9900"/>
+  <text x="562" y="1082" font-size="11" fill="#333333">Orange &#8212; the human decides</text>
+  <line x1="86" y1="1106" x2="126" y2="1106" stroke="#003366" stroke-width="2.5" stroke-dasharray="8 7"/>
+  <text x="136" y="1110" font-size="11" fill="#333333">sacred way &#8212; the study's path</text>
+  <line x1="360" y1="1106" x2="400" y2="1106" stroke="#0066CC" stroke-width="2" stroke-dasharray="2 6"/>
+  <text x="410" y="1110" font-size="11" fill="#333333">groundwater &#8212; shared knowledge base</text>
+  <path d="M 610 1102 a 8 8 0 0 1 12 -6" fill="none" stroke="#0066CC" stroke-width="1.8"/>
+  <path d="M 638 1096 a 8 8 0 0 1 -12 6" fill="none" stroke="#0066CC" stroke-width="1.8"/>
+  <text x="650" y="1110" font-size="11" fill="#333333">dialogue at the water</text>
+
+  <!-- Metodix footer band -->
+  <rect x="18" y="1121" width="804" height="3" fill="#0066CC"/>
+  <rect x="18" y="1124" width="804" height="38" fill="#003366"/>
+  <rect x="330" y="1130" width="180" height="8" fill="url(#meanderLight)"/>
+  <text x="420" y="1154" text-anchor="middle" font-size="10" fill="#CFE0F2">Metodix Ltd &#183; www.metodix.eu &#183; Topography: Pausanias, Description of Greece, Book 10</text>
+</svg>

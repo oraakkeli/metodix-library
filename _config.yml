@@ -1,0 +1,56 @@
+title: Metodix Library
+description: >-
+  An open, versioned library of Delphi and futures research method articles ·
+  Metodix Oy
+theme: jekyll-theme-cayman
+lang: en
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Publication gate
+#
+# The site publishes the `public` register and nothing else. Two independent
+# gates, deliberately:
+#
+#   1. `exclude` — the facilitator and panelist registers never enter the build.
+#      A file that is not in the build cannot be rendered by mistake.
+#   2. `defaults` — everything is `published: false` unless it is under
+#      articles/public/.
+#
+# One of these alone would be enough on a good day. CONTRIBUTING.md §3.3 is
+# explicit that a runtime filter must not be the only line of defence, and this
+# is that principle at build time.
+#
+# Note that `published` here is Jekyll's key (render this page: yes/no). It is
+# NOT the same as an article's `status: published`, which is editorial state,
+# nor `public: true`, which is the distribution decision recorded in
+# registry.yml. Three different words, three different jobs.
+# ─────────────────────────────────────────────────────────────────────────────
+
+exclude:
+  - articles/facilitator
+  - articles/panelist
+  - scripts
+  - templates
+  - registry.yml
+  - CITATION.cff
+  - CONTRIBUTING.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      published: false
+  - scope:
+      path: "articles/public"
+    values:
+      published: true
+      layout: default
+  - scope:
+      path: "index.md"
+    values:
+      published: true
+      layout: default
