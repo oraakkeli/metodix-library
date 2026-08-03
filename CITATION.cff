@@ -28,7 +28,7 @@ keywords:
   - research methodology
   - expert panels
   - consensus and dissensus
-version: 0.2.0
+version: 0.2.9
 date-released: 2026-08-03
 # Concept DOI: always resolves to the most recent release. This is the DOI to cite
 # when you mean "the library". Each release also gets its own version DOI — a study
