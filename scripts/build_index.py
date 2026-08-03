@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate INDEX.md — the whole library on one page, by concept and by register.
+"""Generate CONTENTS.md — the whole library on one page, by concept and by register.
 
 registry.yml is the source of truth, but it is a 350-line YAML file: correct,
 machine-checked, and unreadable at a glance. This renders the same information as
@@ -8,8 +8,13 @@ tables a human can scan, and marks the gaps that still need writing.
     python3 scripts/build_index.py            # write INDEX.md
     python3 scripts/build_index.py --check    # exit 1 if INDEX.md is stale
 
-INDEX.md is GENERATED. It is excluded from the site build (_config.yml): it lists
+CONTENTS.md is GENERATED. It is excluded from the site build (_config.yml): it lists
 facilitator and panelist articles, and the public site publishes neither.
+
+NOT named INDEX.md: macOS is case-insensitive, so INDEX.md and the site's index.md
+are the same file there and this script would silently overwrite the front page.
+On the server they are two files. That asymmetry is exactly the trap CONTRIBUTING §5
+warns about, and it caught this script once already.
 """
 
 from __future__ import annotations
@@ -24,7 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 LANGS = ("en", "fi", "sv")
 REGISTERS = ("facilitator", "panelist", "public")
 LABEL = {"facilitator": "Fasilitoija", "panelist": "Panelisti", "public": "Julkinen"}
-OUT = ROOT / "INDEX.md"
+OUT = ROOT / "CONTENTS.md"
 
 
 def front_matter(path: Path) -> dict:
@@ -153,7 +158,7 @@ def render(reg: dict, disk: dict) -> str:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true",
-                    help="do not write; exit 1 if INDEX.md is out of date")
+                    help="do not write; exit 1 if CONTENTS.md is out of date")
     args = ap.parse_args()
 
     reg = yaml.safe_load((ROOT / "registry.yml").read_text(encoding="utf-8"))
@@ -161,13 +166,13 @@ def main() -> int:
 
     if args.check:
         if not OUT.exists() or OUT.read_text(encoding="utf-8") != text:
-            print("INDEX.md is out of date — run: python3 scripts/build_index.py")
+            print("CONTENTS.md is out of date — run: python3 scripts/build_index.py")
             return 1
-        print("INDEX: PASS")
+        print("CONTENTS: PASS")
         return 0
 
     OUT.write_text(text, encoding="utf-8")
-    print(f"INDEX.md written ({len(text.splitlines())} riviä)")
+    print(f"CONTENTS.md written ({len(text.splitlines())} riviä)")
     return 0
 
 
