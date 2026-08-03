@@ -9,8 +9,8 @@ translations:
 - sv
 title: Ekosysteemi auttaa piirtämään tulevaisuuskarttaa
 order: 12
-version: '1.0'
-last_updated: '2026-07-30'
+version: '1.1'
+last_updated: '2026-08-03'
 license: CC-BY-4.0
 authors:
 - Metodix Oy
@@ -26,7 +26,7 @@ original_source: Delphi-Pronoia frontend/help
 
 Metodixin Delfoi-ekosysteemissä on kolme vaihetta, jotka kytkeytyvät toisiinsa, vaikka niitä on mahdollista käyttää myös itsenäisesti. Suunnittelutyökaluilla (Delphi Planning Ecosystem) rakennetaan delfoi-suunnitelma, jonka tiedonkeruu toteutetaan Pronoia-ohjelmistolla, ja tulokset siirretään kolmannen vaiheen ekosysteemiin (Delphi Analysis Ecosystem) analysoitavaksi. Suunnitteluvaiheeseen on integroitu kaksi itsenäisestikin käytettävää menetelmää: tulevaisuuspyörä (Futures Wheel) ja relevanssipuu (Relevance Tree). Analyysivaiheessa on valittavana useita analyysitekniikoita perinteisten kvantitatiivisten ja kvalitatiivisten metodien lisäksi: argumentti- ja dialogianalyysit (Argument & Dialogue Analysis), CLA- ja MLP-kerrosanalyysit (Causal Layered Analysis, Multi-Level Perspective), heikot signaalit (Weak Signals), jänniteanalyysi (Tension Analysis) ja skenarointi (Scenarios) useiden mallivaihtoehtojen mukaisesti.
 
-Suunnittelussa ja analyysissä hyödynnetään Claude-tekoälyä, ja palvelut ovat jaettavissa plugin-tekniikan avulla itsenäiseen käyttöön joko koko pakettina tai erillisinä moduuleina. Pronoia on verkkosovellus osoitteessa [www.pronoia.fi](http://www.pronoia.fi). Se ottaa vastaan suunnittelutiedot niin, että delfoi-paneeli on valmis toteutukseen — fasilitoija voi toki muokata kyselyä, paneelia ja prosessia. Esivalmistelun sijasta delfoi-tutkimuksen voi toteuttaa Pronoia-ohjelmistolla myös ilman lähtötietoja, joko ilman tekoälyä tai sen avulla.
+Suunnittelussa ja analyysissä hyödynnetään Claude-tekoälyä, ja palvelut ovat jaettavissa plugin-tekniikan avulla itsenäiseen käyttöön joko koko pakettina tai erillisinä moduuleina. Pronoia on verkkosovellus; palvelu avautuu osoitteessa [www.pronoia.fi](http://www.pronoia.fi) 1.9.2026. Se ottaa vastaan suunnittelutiedot niin, että delfoi-paneeli on valmis toteutukseen — fasilitoija voi toki muokata kyselyä, paneelia ja prosessia. Esivalmistelun sijasta delfoi-tutkimuksen voi toteuttaa Pronoia-ohjelmistolla myös ilman lähtötietoja, joko ilman tekoälyä tai sen avulla.
 
 ## Tekoälyapurit Kastalia ja Kassotis
 

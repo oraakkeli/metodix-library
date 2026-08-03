@@ -9,8 +9,8 @@ translations:
 - fi
 title: Ekosystemet hjälper dig att rita en framtidskarta
 order: 12
-version: '1.0'
-last_updated: '2026-07-30'
+version: '1.1'
+last_updated: '2026-08-03'
 license: CC-BY-4.0
 authors:
 - Metodix Oy
@@ -26,7 +26,7 @@ original_source: Delphi-Pronoia frontend/help
 
 Metodix Delfi-ekosystem består av tre faser som hänger samman, även om de också kan användas var för sig. Med planeringsverktygen (Delphi Planning Ecosystem) byggs en delfidesign, datainsamlingen genomförs med Pronoia-applikationen, och resultaten förs över till den tredje fasens ekosystem (Delphi Analysis Ecosystem) för analys. I planeringsfasen ingår två metoder som även kan användas självständigt: framtidshjulet (Futures Wheel) och relevansträdet (Relevance Tree). I analysfasen finns flera analystekniker att välja bland utöver traditionella kvantitativa och kvalitativa metoder: argument- och dialoganalys, CLA- och MLP-skiktanalyser (Causal Layered Analysis, Multi-Level Perspective), svaga signaler, spänningsanalys och scenariobygge enligt flera alternativa modeller.
 
-I planeringen och analysen används Claude-AI, och tjänsterna kan delas för självständigt bruk med plugin-teknik, antingen som helhet eller som separata moduler. Pronoia är en webbapplikation på [www.pronoia.fi](http://www.pronoia.fi). Den tar emot planeringsuppgifterna så att delfipanelen är redo att genomföras — facilitatorn kan förstås redigera enkäten, panelen och processen. I stället för förberedelser kan en delfistudie också genomföras i Pronoia utan förhandsuppgifter, antingen utan AI eller med dess hjälp.
+I planeringen och analysen används Claude-AI, och tjänsterna kan delas för självständigt bruk med plugin-teknik, antingen som helhet eller som separata moduler. Pronoia är en webbapplikation; tjänsten öppnar på [www.pronoia.fi](http://www.pronoia.fi) den 1 september 2026. Den tar emot planeringsuppgifterna så att delfipanelen är redo att genomföras — facilitatorn kan förstås redigera enkäten, panelen och processen. I stället för förberedelser kan en delfistudie också genomföras i Pronoia utan förhandsuppgifter, antingen utan AI eller med dess hjälp.
 
 ## AI-medhjälparna Kastalia och Kassotis
 

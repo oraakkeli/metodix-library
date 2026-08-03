@@ -9,8 +9,8 @@ translations:
 - sv
 title: The ecosystem helps you draw a futures map
 order: 12
-version: '1.0'
-last_updated: '2026-07-30'
+version: '1.1'
+last_updated: '2026-08-03'
 license: CC-BY-4.0
 authors:
 - Metodix Oy
@@ -26,7 +26,7 @@ original_source: Delphi-Pronoia frontend/help
 
 The Metodix Delphi ecosystem consists of three phases that connect to one another, though each can also be used independently. The planning tools (Delphi Planning Ecosystem) are used to build a Delphi design; data collection is carried out with the Pronoia application; and the results are transferred to the third-phase ecosystem (Delphi Analysis Ecosystem) for analysis. Two methods that can also be used on their own are integrated into the planning phase: the Futures Wheel and the Relevance Tree. In the analysis phase, a range of analysis techniques is available beyond traditional quantitative and qualitative methods: argument and dialogue analysis, CLA and MLP layered analyses (Causal Layered Analysis, Multi-Level Perspective), weak signals, tension analysis, and scenario building along several alternative models.
 
-Claude AI is used in planning and analysis, and the services can be shared for independent use via plugin technology, either as a complete package or as separate modules. Pronoia is a web application at [www.pronoia.fi](http://www.pronoia.fi). It receives the planning data so that the Delphi panel is ready for execution — the facilitator can of course still edit the survey, the panel and the process. Instead of advance preparation, a Delphi study can also be run in Pronoia without any input data, either without AI or with its help.
+Claude AI is used in planning and analysis, and the services can be shared for independent use via plugin technology, either as a complete package or as separate modules. Pronoia is a web application; the service opens at [www.pronoia.fi](http://www.pronoia.fi) on 1 September 2026. It receives the planning data so that the Delphi panel is ready for execution — the facilitator can of course still edit the survey, the panel and the process. Instead of advance preparation, a Delphi study can also be run in Pronoia without any input data, either without AI or with its help.
 
 ## The AI assistants Kastalia and Kassotis
 
