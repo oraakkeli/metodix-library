@@ -44,7 +44,7 @@ Yksi rivi per käsite. **TODO** = artikkeli puuttuu vielä. Viiva = tietoinen va
 | 4 | [`04-kierrokset`](articles/facilitator/en/04-kierrokset.md) | Rounds and the pause | en fi sv | ✓ | 1.0 | 2026-06-27 |
 | 5 | [`05-pire`](articles/facilitator/en/05-pire.md) | PIRE — the inter-round assistant | en fi sv | ✓ | 1.0 | 2026-06-27 |
 | 6 | [`06-dae`](articles/facilitator/en/06-dae.md) | Pronoia and DAE — the division of labour | en fi sv | ✓ | 1.0 | 2026-06-27 |
-| 7 | [`07-tietoturva`](articles/facilitator/en/07-tietoturva.md) | Security and transparency | en fi sv | ✓ | 1.0 | 2026-08-02 |
+| 7 | [`07-tietoturva`](articles/facilitator/en/07-tietoturva.md) | Security and transparency | en fi sv | ✓ | 1.1 | 2026-08-12 |
 | 8 | [`08-aikakysymykset`](articles/facilitator/en/08-aikakysymykset.md) | Time questions: time window and time series | en fi sv | ✓ | 1.0 | 2026-08-02 |
 | 9 | [`09-kysymystyypit`](articles/facilitator/en/09-kysymystyypit.md) | Question types: a selection guide with examples | en fi sv | ✓ | 1.0 | 2026-08-02 |
 | 10 | [`10-ai-lapinakyvyys`](articles/facilitator/en/10-ai-lapinakyvyys.md) | AI transparency and AI panelists | en fi sv | ✓ | 1.0 | 2026-07-11 |
