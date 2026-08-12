@@ -9,7 +9,7 @@ translations:
 - sv
 title: Tietoturva ja läpinäkyvyys
 order: 7
-version: '1.2'
+version: '1.3'
 last_updated: '2026-08-12'
 license: CC-BY-4.0
 authors:
@@ -60,6 +60,11 @@ eikä pääsyä voi poistaa yhdeltä ihmiseltä kerrallaan.
   pakollinen**. Se otetaan käyttöön omalta profiilisivulta autentikaattorisovelluksella
   (esim. Google Authenticator puhelimessa tai Applen Salasanat Macilla). Ota
   varakoodit talteen käyttöönoton yhteydessä — niitä ei näytetä toista kertaa.
+- **Epäonnistuneet kirjautumisyritykset näet itse.** Profiilisivu kertoo, montako
+  epäonnistunutta yritystä ehti kertyä ennen kuin pääsit viimeksi sisään. Yksi on arki;
+  useampi peräkkäin on syy vaihtaa salasana ja ottaa kaksivaiheinen käyttöön. Yksittäisistä
+  yrityksistä ei pidetä lokia — siitä tulisi rekisteri IP- ja sähköpostiosoitteista — vaan
+  luku on aggregaatti, ja se on **sinun** tietosi, ei ylläpitäjän valvontanäkymä.
 - **Istunnot näet itse.** Profiilisivu listaa laitteet joilla olet kirjautuneena, ja
   voit katkaista minkä tahansa niistä tai kaikki muut kuin nykyisen.
 

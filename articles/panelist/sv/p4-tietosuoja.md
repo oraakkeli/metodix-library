@@ -9,7 +9,7 @@ translations:
 - fi
 title: Dataskydd — vad som händer med dina uppgifter
 order: 5
-version: '1.0'
+version: '1.1'
 last_updated: '2026-08-02'
 license: CC-BY-4.0
 authors:
@@ -38,6 +38,17 @@ Materialet lagras på en server inom EU, i enlighet med EU:s dataskyddslagstiftn
 Kollegavyn är pseudonym. Observera ändå: om du i en motivering eller kommentar skriver
 detaljer som identifierar dig själv eller någon annan kan de röjas via innehållet. Om
 anonymitet är viktig för dig, undvik identifierande detaljer i fritext.
+
+## Din svarslänk
+
+Du har inget konto och inget lösenord — din åtkomst är en **personlig svarslänk**. Den är
+avsedd endast för dig: vidarebefordra den inte, eftersom den som har länken skulle kunna
+svara i ditt namn. Samma länk bär dig från runda till runda under hela studien.
+
+Länken har en **giltighetstid**, och studiens arrangör kan förnya eller återkalla den. Om
+den slutar fungera säger sidan vilket av de två det är: utgången eller återkallad. I båda
+fallen **finns dina tidigare svar kvar** — be arrangören om en ny länk, så kan du
+fortsätta där du slutade.
 
 ## Används AI?
 

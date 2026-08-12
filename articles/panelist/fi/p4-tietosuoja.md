@@ -9,7 +9,7 @@ translations:
 - sv
 title: Tietosuoja — mitä datastasi tapahtuu
 order: 5
-version: '1.0'
+version: '1.1'
 last_updated: '2026-08-02'
 license: CC-BY-4.0
 authors:
@@ -39,6 +39,18 @@ mukaisesti.
 Vertaisnäkymä on pseudonyymi. Huomaa silti: jos kirjoitat perusteluun tai kommenttiin
 itsesi tai jonkun muun tunnistavia yksityiskohtia, ne voivat paljastua sisällön kautta.
 Jos anonymiteetti on sinulle tärkeä, vältä tunnistavia yksityiskohtia vapaatekstissä.
+
+## Vastauslinkkisi
+
+Sinulla ei ole tunnusta eikä salasanaa — pääsysi on **henkilökohtainen vastauslinkki**.
+Se on tarkoitettu vain sinulle: älä välitä sitä eteenpäin, koska linkin saanut voisi
+vastata sinun nimissäsi. Samalla linkillä palataan kierrokselta toiselle koko
+tutkimuksen ajan.
+
+Linkillä on **voimassaoloaika**, ja tutkimuksen järjestäjä voi uusia tai peruuttaa sen.
+Jos linkki lakkaa toimimasta, sivu kertoo kummasta on kyse: vanhentuneesta linkistä tai
+peruutetusta. Kummassakin tapauksessa **aiemmat vastauksesi ovat tallessa** — pyydä
+järjestäjältä uusi linkki, niin pääset jatkamaan siitä mihin jäit.
 
 ## Käytetäänkö tekoälyä?
 

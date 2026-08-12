@@ -9,7 +9,7 @@ translations:
 - sv
 title: Security and transparency
 order: 7
-version: '1.2'
+version: '1.3'
 last_updated: '2026-08-12'
 license: CC-BY-4.0
 authors:
@@ -59,6 +59,11 @@ impossible to remove access from one person at a time.
   administrators**. You turn it on from your profile page with an authenticator app
   (Google Authenticator on a phone, Apple Passwords on a Mac, and others). Save the
   backup codes during setup — they are not shown a second time.
+- **You can see your own failed sign-in attempts.** The profile page tells you how many
+  failures had accumulated before you last got in. One is everyday life; several in a row
+  is a reason to change your password and turn on two-factor. Individual attempts are not
+  logged — that would be a register of IP and email addresses — the figure is an
+  aggregate, and it is **your** information, not an administrator's monitoring view.
 - **You can see your own sessions.** The profile page lists the devices where you are
   signed in, and you can end any of them or all but the current one.
 

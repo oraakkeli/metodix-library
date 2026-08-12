@@ -9,7 +9,7 @@ translations:
 - fi
 title: Säkerhet och transparens
 order: 7
-version: '1.2'
+version: '1.3'
 last_updated: '2026-08-12'
 license: CC-BY-4.0
 authors:
@@ -61,6 +61,11 @@ gjorde vad — och omöjligt att ta bort åtkomsten för en person i taget.
   administratörer**. Du slår på den från din profilsida med en autentiseringsapp
   (Google Authenticator i telefonen, Apple Lösenord på en Mac, med flera). Spara
   reservkoderna vid aktiveringen — de visas inte en andra gång.
+- **Du ser dina egna misslyckade inloggningsförsök.** Profilsidan berättar hur många
+  misslyckade försök som hann samlas innan du senast kom in. Ett är vardag; flera i rad är
+  skäl att byta lösenord och slå på tvåstegsverifiering. Enskilda försök loggas inte — det
+  skulle bli ett register över IP- och e-postadresser — utan siffran är ett aggregat, och
+  den är **din** uppgift, inte administratörens övervakningsvy.
 - **Du ser dina egna sessioner.** Profilsidan listar de enheter där du är inloggad, och
   du kan avsluta vilken som helst av dem eller alla utom den nuvarande.
 

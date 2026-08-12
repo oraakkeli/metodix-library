@@ -9,7 +9,7 @@ translations:
 - sv
 title: Privacy — what happens to your data
 order: 5
-version: '1.0'
+version: '1.1'
 last_updated: '2026-08-02'
 license: CC-BY-4.0
 authors:
@@ -39,6 +39,17 @@ protection law.
 The peer view is pseudonymous. Still note: if you write identifying details about yourself
 or others in a rationale or comment, they can be revealed through the content. If anonymity
 matters to you, avoid identifying details in free text.
+
+## Your response link
+
+You have no account and no password — your access is a **personal response link**. It is
+meant for you alone: do not forward it, because anyone who has it could answer in your
+name. The same link carries you from round to round for the whole study.
+
+The link has an **expiry date**, and the study's organiser can renew or revoke it. If it
+stops working, the page tells you which of the two it is: expired or revoked. In both
+cases **your earlier responses are safe** — ask the organiser for a new link and you can
+carry on where you left off.
 
 ## Is AI used?
 
