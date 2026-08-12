@@ -9,8 +9,8 @@ translations:
 - sv
 title: Tietoturva ja läpinäkyvyys
 order: 7
-version: '1.0'
-last_updated: '2026-08-02'
+version: '1.1'
+last_updated: '2026-08-12'
 license: CC-BY-4.0
 authors:
 - Metodix Oy
@@ -42,6 +42,58 @@ DAE-handoff, raportit).
 > Rekisterinpitäjänä huomaa: palvelininfrastruktuurin tarjoaja ja tekoälypalvelu ovat
 > henkilötietojen käsittelijöitä. Ajantasainen luettelo on selosteessa.
 
+## Oma tili ja kirjautuminen
+
+Fasilitaattorilla on **henkilökohtainen tili**: sähköposti ja salasana. Jaettuja
+tunnuksia ei käytetä, koska jaetusta tunnuksesta ei jälkikäteen näe kuka teki mitä —
+eikä pääsyä voi poistaa yhdeltä ihmiseltä kerrallaan.
+
+- **Uusi tili syntyy kutsusta.** Avoin rekisteröityminen on suljettu ensimmäisen
+  ylläpitäjän jälkeen. Kutsulinkki on kertakäyttöinen ja vanhenee.
+- **Salasanan voi palauttaa itse** kirjautumissivun linkistä, jos palvelimelle on
+  määritetty sähköpostilähetys. Ylläpitäjä voi myös nollata sen.
+- **Kaksivaiheinen tunnistautuminen** on kaikille vapaaehtoinen ja **ylläpitäjille
+  pakollinen**. Se otetaan käyttöön omalta profiilisivulta autentikaattorisovelluksella
+  (esim. Google Authenticator puhelimessa tai Applen Salasanat Macilla). Ota
+  varakoodit talteen käyttöönoton yhteydessä — niitä ei näytetä toista kertaa.
+- **Istunnot näet itse.** Profiilisivu listaa laitteet joilla olet kirjautuneena, ja
+  voit katkaista minkä tahansa niistä tai kaikki muut kuin nykyisen.
+
+Ylläpitäjä voi tarvittaessa katkaista käyttäjän istunnot sulkematta tiliä. Hän **ei**
+näe kenenkään muun istuntolistaa eikä voi purkaa toisen kaksivaiheista.
+
+## Kuka näkee tutkimuksesi
+
+Tutkimuksella on kolme roolia:
+
+| Rooli | Näkee | Voi muuttaa | Henkilötiedot |
+|---|---|---|---|
+| **Omistaja** | kaiken | kaiken, ml. jäsenet, AI-moodi, sokkous, poisto | kyllä (paitsi blind-tilassa) |
+| **Fasilitaattori** | kaiken | tutkimuksen sisällön | kyllä (paitsi blind-tilassa) |
+| **Katselija** | tulokset | ei mitään | **ei koskaan** |
+
+Katselija on rooli jonka annat rahoittajalle tai arvioijalle: lukuoikeus tuloksiin ei
+ole oikeus niiden takana oleviin ihmisiin.
+
+Tutkimus voi kuulua **organisaatiolle** (yliopisto, kunta, yritys). Silloin
+organisaation ylläpitäjä on omistaja myös silloin kun tekijä lähtee talosta, ja
+tekoälykulut menevät organisaation kukkarosta. Ilman organisaatiota tutkimus on
+henkilökohtainen — se on oletus ja täysin tuettu.
+
+**Omistajuus on siirrettävissä** (Tiimi ja oikeudet -sivu). Tee se ennen kuin lähdet
+projektista: tutkimus jonka ainoa omistaja on poistunut, on jumissa.
+
+## Oikeushistoria
+
+Jokainen oikeusmuutos kirjautuu muuttumattomaan lokiin: kuka lisäsi kenet, mikä rooli
+oli ennen ja mikä nyt, milloin kutsu lähetettiin, peruttiin tai hyväksyttiin, milloin
+tutkimus liitettiin organisaatioon ja milloin sokkous purettiin. Loki löytyy
+tutkimuksen **Tiimi ja oikeudet** -sivulta ja on omistajatason tieto.
+
+Tämä on se vastaus jonka laitos kysyy: *kenellä on ollut pääsy tähän paneeliin ja mistä
+alkaen*. Rivejä ei muokata eikä poisteta, ja ne säilyvät vaikka tutkimus tai käyttäjä
+poistettaisiin.
+
 ## AI ja Anthropic
 
 Kun AI-ominaisuudet ovat päällä, osa datasta käsitellään Anthropicin API:lla:
@@ -64,10 +116,14 @@ koske aineiston sijaintia eikä vientejä.
 Panelistit näkevät toisensa vain pseudonyymeillä. **Facilitator-blind** -tila piilottaa
 nimet ja sähköpostit myös sinulta. **Suositus arkaluonteisiin paneeleihin: aja
 facilitator-blind.** DAE-handoff ja CSV-vienti eivät sisällä nimiä tai sähköposteja
-**koskaan** — riippumatta blind-asetuksesta (07/2026 alkaen). Muista: vapaateksti voi
+**koskaan** — riippumatta blind-asetuksesta. Muista: vapaateksti voi
 paljastaa henkilön sisällön kautta, vaikka tunniste on piilossa.
 
-## Anonymisointi tutkimuksen päättyessä (07/2026)
+Sokkous on **itsensä sokeuttamista**, ei tiiminhallintaa: se piilottaa henkilöllisyydet
+kaikilta, myös omistajalta joka kytki sen päälle. Sen purkaminen paljastaa jokaisen
+panelistin koko tiimille, ja **purku kirjautuu oikeushistoriaan**.
+
+## Anonymisointi tutkimuksen päättyessä
 
 Kun tutkimus on valmis, anonymisoi se: **Panelistit-välilehden 🔒 Anonymisoi tutkimus**
 -nappi poistaa nimet ja sähköpostit pysyvästi ja mitätöi kutsulinkit. Jäljelle jäävä
@@ -82,11 +138,10 @@ nimeäkin. Matriisin terveyskortti varoittaa tällaisista soluista (🔒), ja ne
 koneluettavana `small_cells`-listana analyysivientiin. **Älä julkaise solutason lukuja
 alle kolmen hengen soluista ilman asianomaisten suostumusta.**
 
-## Pääsyavain (tuotantoympäristö)
-
-Tuotannossa fasilitaattoriympäristö on suojattu pääsyavaimella: selain kysyy avainta
-ensimmäisellä kerralla ja muistaa sen. Avaimen saat ylläpitäjältä. Panelistien
-vastauslinkit toimivat ilman avainta. (Paikallisessa kehitysajossa avainta ei kysytä.)
+Sama raja toteutuu myös ohjelmassa: ryhmätason tuloksia ei näytetä alle kolmen hengen
+ryhmistä, pienet ryhmät niputetaan "Muut"-ryhmään, ja jos sekin jää alle kolmen, koko
+ryhmäjako jätetään näyttämättä — muuten pienen ryhmän luvut voisi laskea
+kokonaisuudesta vähentämällä.
 
 ## Julkinen tietosuojaseloste
 
@@ -98,14 +153,16 @@ AI-läpinäkyvyydestä tarkemmin: artikkeli *AI-läpinäkyvyys ja tekoälypaneli
 
 Informoi panelisteja ennen R0:aa: mitä kerätään ja miksi, käytetäänkö AI:ta, miten
 anonymiteetti toimii, säilytysaika ja oikeudet (tarkastus, oikaisu, **poisto**).
-Poisto on tuettu: voit poistaa tutkimuksen, panelistin, teesin ja kommentin.
+Poisto on tuettu: voit poistaa tutkimuksen, panelistin, teesin ja kommentin, ja
+ylläpitäjä voi poistaa käyttäjätilin kokonaan.
 
 ## Pikatarkistus ennen julkaisua
 
 1. AI päällä vai ei? Sopiiko aineiston arkaluonteisuuteen?
 2. Arkaluonteinen paneeli → facilitator-blind.
 3. Panelistit informoitu? Kutsussa kulkee automaattisesti AI-maininta ja /privacy-linkki.
-4. AI-mallin versio pinnattu (reprodusoitavuus, ks. AI-mallit-dokumentti)?
-5. Vienti käsitellään luottamuksellisena; säilytys ja lopuksi poisto sovittu.
-6. Matriisin pienet solut (n < 3) tarkistettu — ei solutason lukuja raportteihin ilman suostumusta.
-7. Tutkimuksen päätyttyä: 🔒 Anonymisoi tutkimus.
+4. Tiimin roolit tarkistettu — onko katselija oikea rooli sille joka vain seuraa?
+5. AI-mallin versio pinnattu (reprodusoitavuus, ks. AI-mallit-dokumentti)?
+6. Vienti käsitellään luottamuksellisena; säilytys ja lopuksi poisto sovittu.
+7. Matriisin pienet solut (n < 3) tarkistettu — ei solutason lukuja raportteihin ilman suostumusta.
+8. Tutkimuksen päätyttyä: 🔒 Anonymisoi tutkimus.
