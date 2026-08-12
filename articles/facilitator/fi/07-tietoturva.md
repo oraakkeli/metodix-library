@@ -9,7 +9,7 @@ translations:
 - sv
 title: Tietoturva ja läpinäkyvyys
 order: 7
-version: '1.1'
+version: '1.2'
 last_updated: '2026-08-12'
 license: CC-BY-4.0
 authors:
@@ -30,7 +30,7 @@ kokoaa olennaisen; täysi seloste on `docs/SECURITY-TRANSPARENCY.md`.
 
 Aineisto sijaitsee **EU-alueella olevalla palvelimella** ja sitä käsitellään EU:n
 tietosuojasäädösten mukaisesti. Liikenne on salattua, panelistien pääsy tapahtuu
-kertakäyttöisillä kutsulinkeillä ilman salasanoja, varmuuskopiot pysyvät EU-alueella,
+henkilökohtaisilla, määräaikaisilla kutsulinkeillä ilman salasanoja, varmuuskopiot pysyvät EU-alueella,
 ja ohjelmiston muutokset kulkevat automaattitarkistusten ja staging-ympäristön kautta
 ennen tuotantoa. Ajantasaiset tiedot käsittelijöistä ja säilytysajoista ovat julkisessa
 selosteessa: /privacy.
@@ -49,7 +49,11 @@ tunnuksia ei käytetä, koska jaetusta tunnuksesta ei jälkikäteen näe kuka te
 eikä pääsyä voi poistaa yhdeltä ihmiseltä kerrallaan.
 
 - **Uusi tili syntyy kutsusta.** Avoin rekisteröityminen on suljettu ensimmäisen
-  ylläpitäjän jälkeen. Kutsulinkki on kertakäyttöinen ja vanhenee.
+  ylläpitäjän jälkeen. Tilikutsulinkki on kertakäyttöinen ja vanhenee. (Panelistin
+  kutsulinkki on eri asia: se on henkilökohtainen ja **uudelleenkäytettävä** — samalla
+  osoitteella palataan kierrokselta toiselle — mutta sekin vanhenee, ja voit uusia tai
+  peruuttaa sen Panelistit-välilehdeltä. Uusiminen tappaa vanhan linkin, joten
+  liikkeellä on aina tasan yksi voimassa oleva linkki panelistia kohti.)
 - **Salasanan voi palauttaa itse** kirjautumissivun linkistä, jos palvelimelle on
   määritetty sähköpostilähetys. Ylläpitäjä voi myös nollata sen.
 - **Kaksivaiheinen tunnistautuminen** on kaikille vapaaehtoinen ja **ylläpitäjille

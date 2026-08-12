@@ -9,7 +9,7 @@ translations:
 - fi
 title: Säkerhet och transparens
 order: 7
-version: '1.1'
+version: '1.2'
 last_updated: '2026-08-12'
 license: CC-BY-4.0
 authors:
@@ -30,7 +30,8 @@ här artikeln samlar det väsentliga; den fullständiga redogörelsen finns i
 ## Var data finns
 
 Materialet ligger på en **server inom EU** och behandlas enligt EU:s dataskyddsregler.
-Trafiken är krypterad, panelisterna kommer in via engångslänkar utan lösenord,
+Trafiken är krypterad, panelisterna kommer in via personliga, tidsbegränsade
+inbjudningslänkar utan lösenord,
 säkerhetskopiorna stannar inom EU, och ändringar i programvaran passerar automatiska
 kontroller och en stagingmiljö före produktion. Aktuella uppgifter om biträden och
 lagringstider finns i den offentliga informationen: /privacy.
@@ -49,7 +50,11 @@ används inte, eftersom en delad inloggning gör det omöjligt att i efterhand s
 gjorde vad — och omöjligt att ta bort åtkomsten för en person i taget.
 
 - **Ett nytt konto uppstår ur en inbjudan.** Öppen registrering är stängd efter den
-  första administratören. Inbjudningslänken är av engångstyp och går ut.
+  första administratören. Kontoinbjudan är av engångstyp och går ut. (Panelistens
+  inbjudningslänk är något annat: den är personlig och **återanvändbar** — samma adress
+  bär hen från runda till runda — men även den går ut, och du kan förnya eller
+  återkalla den på fliken Panelister. En förnyelse dödar den gamla länken, så det finns
+  alltid exakt en giltig länk per panelist.)
 - **Du kan återställa ditt lösenord själv** från inloggningssidan om e-postutskick är
   konfigurerat på servern. En administratör kan också återställa det.
 - **Tvåstegsverifiering** är frivillig för alla och **obligatorisk för

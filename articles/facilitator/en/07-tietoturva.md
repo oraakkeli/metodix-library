@@ -9,7 +9,7 @@ translations:
 - sv
 title: Security and transparency
 order: 7
-version: '1.1'
+version: '1.2'
 last_updated: '2026-08-12'
 license: CC-BY-4.0
 authors:
@@ -29,8 +29,8 @@ article gathers the essentials; the full account is `docs/SECURITY-TRANSPARENCY.
 ## Where the data lives
 
 The material sits on a **server located in the EU** and is processed under EU data
-protection law. Traffic is encrypted, panelists reach the study through single-use
-invite links with no passwords, backups stay in the EU, and software changes pass
+protection law. Traffic is encrypted, panelists reach the study through personal,
+time-limited invite links with no passwords, backups stay in the EU, and software changes pass
 automated checks and a staging environment before production. Current processors and
 retention periods are in the public notice: /privacy.
 
@@ -48,7 +48,11 @@ used, because a shared login makes it impossible to see afterwards who did what 
 impossible to remove access from one person at a time.
 
 - **A new account comes from an invitation.** Open registration is closed after the
-  first administrator. The invitation link is single-use and expires.
+  first administrator. The account invitation link is single-use and expires. (A
+  panelist's invite link is a different thing: it is personal and **reusable** — the
+  same address carries them from round to round — but it too expires, and you can
+  renew or revoke it on the Panelists tab. Renewing kills the old link, so exactly one
+  live link exists per panelist.)
 - **You can reset your own password** from the sign-in page if email delivery is
   configured on the server. An administrator can also reset it.
 - **Two-factor authentication** is optional for everyone and **required of
