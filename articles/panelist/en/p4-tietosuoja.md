@@ -9,8 +9,8 @@ translations:
 - sv
 title: Privacy — what happens to your data
 order: 5
-version: '1.1'
-last_updated: '2026-08-02'
+version: '1.2'
+last_updated: '2026-08-17'
 license: CC-BY-4.0
 authors:
 - Metodix Oy
@@ -65,8 +65,30 @@ When the study is over, the organizer **anonymizes** it: your name, email and re
 link are permanently deleted. The remaining material is anonymous research data that can
 no longer be linked to you.
 
+## If you want to withdraw during the study
+
+Taking part is voluntary, and you may withdraw at any time by contacting the study's
+contact person. Your **name, email address and personal link are then permanently
+deleted**, and you will receive no further contact.
+
+**The answers and reasoning you have given up to that point remain in the material
+under a pseudonym** (e.g. P-17). The reason is methodological: they are part of a round
+the other panelists have already read and commented on, and may have responded to.
+Removing one participant's reasoning afterwards would alter everyone else's material
+and leave comments answering a text that no longer exists. After the deletion the
+answers can no longer be linked to you.
+
+## Contacting you
+
+If you gave an email address, it is used for panel messages and reminders: the
+invitation, a new round opening, and messages from the contact person. Messages come in
+the name of the study's contact person and **you can reply to them directly** — the
+reply reaches them, not an automated mailbox. Withdrawing ends all contact.
+
 ## Your rights
 
-You can ask to see your data, correct it, or **have it deleted**. Contact the study
-organizer; deletion is technically supported. The full privacy & AI notice is publicly
-available at **/privacy** (also linked in your invitation and on the home view).
+You can ask to see your data and to correct it. You can also **detach yourself from the
+material** by withdrawing (see above): your identifying details are deleted and the
+answers remain under the pseudonym. Contact the study's contact person. The full privacy
+& AI notice is publicly available at **/privacy** (also linked in your invitation and on
+the home view).

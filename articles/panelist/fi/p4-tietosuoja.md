@@ -9,8 +9,8 @@ translations:
 - sv
 title: Tietosuoja — mitä datastasi tapahtuu
 order: 5
-version: '1.1'
-last_updated: '2026-08-02'
+version: '1.2'
+last_updated: '2026-08-17'
 license: CC-BY-4.0
 authors:
 - Metodix Oy
@@ -66,8 +66,29 @@ Tutkimuksen päätyttyä järjestäjä **anonymisoi** sen: nimesi, sähköpostis
 vastauslinkkisi poistetaan pysyvästi. Jäljelle jäävä aineisto on anonyymiä
 tutkimusdataa, jota ei voi enää yhdistää sinuun.
 
+## Jos haluat vetäytyä kesken tutkimuksen
+
+Osallistuminen on vapaaehtoista, ja voit vetäytyä milloin tahansa ilmoittamalla
+tutkimuksen yhteyshenkilölle. Silloin **nimesi, sähköpostiosoitteesi ja
+henkilökohtainen linkkisi poistetaan pysyvästi**, etkä saa enää yhteydenottoja.
+
+**Siihen mennessä antamasi vastaukset ja perustelut jäävät aineistoon pseudonyymin
+alle** (esim. P-17). Syy on menetelmällinen: ne ovat osa kierrosta, jonka muut
+panelistit ovat jo lukeneet ja kommentoineet, ja niihin on voitu vastata. Yhden
+osallistujan perustelun poistaminen jälkikäteen muuttaisi kaikkien muiden aineistoa
+ja jättäisi kommentit vastaamaan tekstiin jota ei enää ole. Poistamisen jälkeen
+vastauksia ei voi enää yhdistää sinuun.
+
+## Yhteydenotot sinuun
+
+Jos annoit sähköpostiosoitteen, sitä käytetään paneelin viesteihin ja muistutuksiin:
+kutsu, uuden kierroksen avautuminen ja yhteyshenkilön viestit. Viestit tulevat
+tutkimuksen yhteyshenkilön nimissä ja voit **vastata niihin suoraan** — vastaus menee
+hänelle, ei automaattiin. Vetäytyminen lopettaa yhteydenotot kokonaan.
+
 ## Oikeutesi
 
-Voit pyytää nähdä tietosi, oikaista ne tai **poistaa ne**. Ota yhteyttä tutkimuksen
-järjestäjään; poistaminen on teknisesti tuettu. Täysi tietosuoja- ja AI-seloste on
+Voit pyytää nähdä tietosi ja oikaista ne. Voit myös **irrottaa itsesi aineistosta**
+vetäytymällä (ks. yllä): tunnistetietosi poistetaan, vastaukset jäävät pseudonyymin
+alle. Ota yhteyttä tutkimuksen yhteyshenkilöön. Täysi tietosuoja- ja AI-seloste on
 julkisesti osoitteessa **/privacy** (linkki myös kutsuviestissäsi ja kotinäkymässä).

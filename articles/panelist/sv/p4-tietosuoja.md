@@ -9,8 +9,8 @@ translations:
 - fi
 title: Dataskydd — vad som händer med dina uppgifter
 order: 5
-version: '1.1'
-last_updated: '2026-08-02'
+version: '1.2'
+last_updated: '2026-08-17'
 license: CC-BY-4.0
 authors:
 - Metodix Oy
@@ -64,9 +64,30 @@ När studien är över **anonymiserar** arrangören den: ditt namn, din e-post o
 svarslänk raderas permanent. Kvarvarande material är anonym forskningsdata som inte
 längre kan kopplas till dig.
 
+## Om du vill dra dig ur under studien
+
+Deltagandet är frivilligt, och du kan när som helst dra dig ur genom att kontakta
+studiens kontaktperson. Då **raderas ditt namn, din e-postadress och din personliga
+länk permanent**, och du kontaktas inte mer.
+
+**De svar och motiveringar du gett fram till dess stannar kvar i materialet under en
+pseudonym** (t.ex. P-17). Skälet är metodologiskt: de är en del av en omgång som de
+andra panelisterna redan läst och kommenterat, och kan ha svarat på. Att radera en
+deltagares motivering i efterhand skulle ändra alla andras material och lämna
+kommentarer som svarar på en text som inte längre finns. Efter raderingen kan svaren
+inte längre kopplas till dig.
+
+## Kontakt med dig
+
+Om du uppgav en e-postadress används den för panelens meddelanden och påminnelser:
+inbjudan, en ny omgång som öppnas och meddelanden från kontaktpersonen. Meddelandena
+kommer i studiens kontaktpersons namn och **du kan svara direkt på dem** — svaret når
+hen, inte en automat. Att dra sig ur avslutar all kontakt.
+
 ## Dina rättigheter
 
-Du kan begära att få se dina uppgifter, rätta dem eller **få dem raderade**. Kontakta
-studiens arrangör; radering stöds tekniskt. Den fullständiga dataskydds- och
-AI-informationen finns offentligt på **/privacy** (länken finns också i din inbjudan
-och i hemvyn).
+Du kan begära att få se dina uppgifter och rätta dem. Du kan också **lösgöra dig från
+materialet** genom att dra dig ur (se ovan): dina identifierande uppgifter raderas och
+svaren stannar kvar under pseudonymen. Kontakta studiens kontaktperson. Den
+fullständiga dataskydds- och AI-informationen finns offentligt på **/privacy** (länken
+finns också i din inbjudan och i hemvyn).

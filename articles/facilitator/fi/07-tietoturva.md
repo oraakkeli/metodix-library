@@ -9,8 +9,8 @@ translations:
 - sv
 title: Tietoturva ja läpinäkyvyys
 order: 7
-version: '1.3'
-last_updated: '2026-08-12'
+version: '1.4'
+last_updated: '2026-08-17'
 license: CC-BY-4.0
 authors:
 - Metodix Oy
@@ -151,6 +151,27 @@ Sama raja toteutuu myös ohjelmassa: ryhmätason tuloksia ei näytetä alle kolm
 ryhmistä, pienet ryhmät niputetaan "Muut"-ryhmään, ja jos sekin jää alle kolmen, koko
 ryhmäjako jätetään näyttämättä — muuten pienen ryhmän luvut voisi laskea
 kokonaisuudesta vähentämällä.
+
+## Viestit panelisteille
+
+Viestintäkeskuksesta lähetetty viesti menee panelistin **sähköpostiin** ja hänen omaan
+näkymäänsä. Kolme asiaa on hyvä tietää:
+
+- **Vetäytynyt panelisti rajataan ulos automaattisesti.** Hän ei saa viestiä eikä
+  sähköpostia, eikä hänelle voi enää luoda linkkiä. Näet lähetyksen yhteenvedosta
+  montako ohitettiin sillä perusteella.
+- **Vastausosoite on tutkimuksen yhteyshenkilö**, ei automaatti. Panelisti voi vastata
+  suoraan, ja se on myös syy vastata hänelle: vastattu viesti on postipalvelimille
+  merkki oikeasta lähettäjästä.
+- **Voit valita mitä sähköpostissa kulkee.** Täysi muoto vie kirjoittamasi tekstin
+  mukanaan; ilmoitusmuoto kertoo vain että paneelissa on viesti ja linkittää omalle
+  sivulle. Valitse ilmoitusmuoto kun viesti sisältää paneelin sisältöä, jota ei ole
+  tarkoitettu postilaatikoihin.
+
+Muistutuksen liitteeksi voi valita **väliaikatietoja** (oma eteneminen, ryhmän ja
+paneelin eteneminen). Luvut ratkaistaan jokaiselle vastaanottajalle erikseen ja hänen
+kielellään, ja ryhmärivi noudattaa samaa alle kolmen hengen sääntöä kuin muutkin
+ryhmätulokset.
 
 ## Julkinen tietosuojaseloste
 

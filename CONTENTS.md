@@ -44,7 +44,7 @@ Yksi rivi per käsite. **TODO** = artikkeli puuttuu vielä. Viiva = tietoinen va
 | 4 | [`04-kierrokset`](articles/facilitator/en/04-kierrokset.md) | Rounds and the pause | en fi sv | ✓ | 1.0 | 2026-06-27 |
 | 5 | [`05-pire`](articles/facilitator/en/05-pire.md) | PIRE — the inter-round assistant | en fi sv | ✓ | 1.0 | 2026-06-27 |
 | 6 | [`06-dae`](articles/facilitator/en/06-dae.md) | Pronoia and DAE — the division of labour | en fi sv | ✓ | 1.0 | 2026-06-27 |
-| 7 | [`07-tietoturva`](articles/facilitator/en/07-tietoturva.md) | Security and transparency | en fi sv | ✓ | 1.3 | 2026-08-12 |
+| 7 | [`07-tietoturva`](articles/facilitator/en/07-tietoturva.md) | Security and transparency | en fi sv | ✓ | 1.4 | 2026-08-17 |
 | 8 | [`08-aikakysymykset`](articles/facilitator/en/08-aikakysymykset.md) | Time questions: time window and time series | en fi sv | ✓ | 1.0 | 2026-08-02 |
 | 9 | [`09-kysymystyypit`](articles/facilitator/en/09-kysymystyypit.md) | Question types: a selection guide with examples | en fi sv | ✓ | 1.0 | 2026-08-02 |
 | 10 | [`10-ai-lapinakyvyys`](articles/facilitator/en/10-ai-lapinakyvyys.md) | AI transparency and AI panelists | en fi sv | ✓ | 1.0 | 2026-07-11 |
@@ -60,7 +60,7 @@ Yksi rivi per käsite. **TODO** = artikkeli puuttuu vielä. Viiva = tietoinen va
 | 2 | [`p1-vastaaminen`](articles/panelist/en/p1-vastaaminen.md) | How do I answer? | en fi sv | ✓ | 1.0 | 2026-07-09 |
 | 3 | [`p2-kierrokset`](articles/panelist/en/p2-kierrokset.md) | Rounds, dialogue, and changing your answer | en fi sv | ✓ | 1.0 | 2026-06-27 |
 | 4 | [`p3-erimielisyys`](articles/panelist/en/p3-erimielisyys.md) | Anonymity and disagreement | en fi sv | ✓ | 1.0 | 2026-06-27 |
-| 5 | [`p4-tietosuoja`](articles/panelist/en/p4-tietosuoja.md) | Privacy — what happens to your data | en fi sv | ✓ | 1.1 | 2026-08-02 |
+| 5 | [`p4-tietosuoja`](articles/panelist/en/p4-tietosuoja.md) | Privacy — what happens to your data | en fi sv | ✓ | 1.2 | 2026-08-17 |
 | 6 | [`p5-ryhmittely`](articles/panelist/en/p5-ryhmittely.md) | How do I answer a grouping question? | en fi sv |  | 1.0 | 2026-07-09 |
 | 7 | [`p6-aikaestimaatti`](articles/panelist/en/p6-aikaestimaatti.md) | How do I answer a timing estimate? | en fi sv | ✓ | 1.0 | 2026-07-09 |
 | 8 | [`p7-panostus`](articles/panelist/en/p7-panostus.md) | How do I answer an allocation question? | en fi sv |  | 1.0 | 2026-07-09 |

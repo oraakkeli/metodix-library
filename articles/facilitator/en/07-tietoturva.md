@@ -9,8 +9,8 @@ translations:
 - sv
 title: Security and transparency
 order: 7
-version: '1.3'
-last_updated: '2026-08-12'
+version: '1.4'
+last_updated: '2026-08-17'
 license: CC-BY-4.0
 authors:
 - Metodix Oy
@@ -150,6 +150,26 @@ The same threshold is enforced in software: group-level results are not shown fo
 groups of fewer than three, small groups are folded into an "Other" group, and if that
 group too falls below three, the whole breakdown is withheld — otherwise a small
 group's figures could be derived by subtracting from the total.
+
+## Messages to panelists
+
+A message sent from the communication centre goes to the panelist's **email** and to
+their own view. Three things worth knowing:
+
+- **A withdrawn panelist is excluded automatically.** They receive neither the message
+  nor the email, and no new link can be issued to them. The delivery summary tells you
+  how many were skipped on that ground.
+- **The reply address is the study's contact person**, not an automated mailbox. The
+  panelist can reply directly — and that is also a reason to reply to them: an answered
+  message is a signal to mail servers that the sender is genuine.
+- **You choose what travels in the email.** The full form carries the text you wrote;
+  the notice form only says there is a message in the panel and links to their own page.
+  Choose the notice form when the message contains panel content that is not meant for
+  inboxes.
+
+A reminder can carry **interim status facts** (own progress, group and panel progress).
+The figures are resolved for each recipient separately and in their own language, and
+the group line follows the same fewer-than-three rule as any other group result.
 
 ## Public privacy notice
 

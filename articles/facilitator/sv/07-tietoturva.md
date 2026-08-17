@@ -9,8 +9,8 @@ translations:
 - fi
 title: Säkerhet och transparens
 order: 7
-version: '1.3'
-last_updated: '2026-08-12'
+version: '1.4'
+last_updated: '2026-08-17'
 license: CC-BY-4.0
 authors:
 - Metodix Oy
@@ -154,6 +154,26 @@ Samma gräns upprätthålls i programmet: resultat på gruppnivå visas inte fö
 färre än tre, små grupper slås ihop till en "Övriga"-grupp, och om även den understiger
 tre visas hela gruppindelningen inte alls — annars kunde en liten grupps siffror räknas
 fram genom subtraktion från helheten.
+
+## Meddelanden till panelister
+
+Ett meddelande som skickas från kommunikationscentralen går till panelistens **e-post**
+och till hens egen vy. Tre saker är värda att veta:
+
+- **En panelist som dragit sig ur utesluts automatiskt.** Hen får varken meddelandet
+  eller e-posten, och ingen ny länk kan skapas. Sammanfattningen visar hur många som
+  hoppades över på den grunden.
+- **Svarsadressen är studiens kontaktperson**, inte en automat. Panelisten kan svara
+  direkt — och det är också ett skäl att svara: ett besvarat meddelande är en signal
+  till e-postservrar om att avsändaren är äkta.
+- **Du väljer vad som färdas i e-posten.** Den fullständiga formen bär med sig texten du
+  skrev; aviseringsformen säger bara att det finns ett meddelande i panelen och länkar
+  till hens egen sida. Välj aviseringsformen när meddelandet innehåller panelinnehåll
+  som inte är avsett för inkorgar.
+
+En påminnelse kan bära med sig **lägesuppgifter** (egen framfart, gruppens och panelens
+framfart). Siffrorna räknas ut för varje mottagare separat och på hens eget språk, och
+grupprad följer samma regel om färre än tre som alla andra gruppresultat.
 
 ## Offentlig dataskyddsinformation
 
